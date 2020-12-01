@@ -2,14 +2,12 @@
 Author: Simon Wibmer
 Klasse: 5BHEL
 Abgabedatum: 2.12.20
+Github: https://github.com/simonwibmer/dic_fsst/tree/master/binary
 Aufgabe:
 -Spiele http://20q.net/.
 -Verstehe: https://de.wikipedia.org/wiki/Bin%C3%A4re_Suche
 -Implementiere rekursive binäre Suche in C, benutze die Funktion strcmp(3)
-
 */
-
-
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
@@ -19,33 +17,32 @@ Aufgabe:
 
 #define Buffer_Size 50000000
 
-
+//################################################################
 char** binary(char* Input, char** search_index,int Ug, int Og)
 {
-    int stringreturn = strcmp(Input,*(search_index+(Og+Ug)/2));
-
-    if (Ug == Og || Ug == (Og+Ug)/2)
+    int stringreturn = strcmp(Input,*(search_index+(Og+Ug)/2));     //strcmp zwischen dem gesuchten Wort und der Wortliste an der mittlersten Stelle
+    if (Ug == Og || Ug == (Og+Ug)/2)      //Abbruch Bedingung
     {
         return NULL;
     }
-    if(stringreturn < 0)
+    if(stringreturn < 0)                // Wenn stringreturn kleiner Null -> gesuchtes Wort im unteren Teil der Liste
     {
-        Og = (Ug+Og)/2;
+        Og = (Ug+Og)/2;                 // Obergrenze wird auf das vorherige Mittel gesetzt
     }
-    else if(stringreturn > 0)
+    else if(stringreturn > 0)           //Wenn stringreturn gößer Null -> gesuchtes Wort om oberen Teil der Liste
     {
-        Ug = (Ug+Og)/2;
+        Ug = (Ug+Og)/2;                 //Untergrenze wird auf das vorherige Mittel gesetzt
     }
-    else
+    else                                // stringreturn == 0 -> Wort gefunden
     {
         printf("Wort gefunden: %s an Stelle %i\n", *(search_index+((Ug+Og)/2)),(Ug+Og)/2);
         return (search_index+((Ug+Og)/2));
     }
      
-    return binary(Input,search_index,Ug,Og);
+    return binary(Input,search_index,Ug,Og); // kommt das Programm hier an wurde das Wort noch nicht gefunden -> 
+                                            //Es wird die Funktion nocheinmal mi den veränderten grenzen returned
 }
-
-
+//##############################################################################
 char** searchIx(char* Input)
 {
     
@@ -62,15 +59,14 @@ char** searchIx(char* Input)
 
     for(int x=0; x<rd; x++)                         //for Schleife läuft das gesamte Dokument durch
     {
-        if (*(Buffer+x) == 0)
+        if (*(Buffer+x) == 0)                       // bei einer 0 im Buffer wird das Wort in search_index geschrieben und der Buffer erhöht
         {
             search_index[++i] = Buffer+(++x);
         }
     }
    return binary(Input, search_index,0,i);
 }
-
-
+//###########################################################################
 int main(int argc, char** argv)
 {
 
