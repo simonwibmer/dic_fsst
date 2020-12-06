@@ -1,0 +1,35 @@
+001) Write a query to display the names (first_name, last_name) using alias name "First Name", "Last Name".
+002) Write a query to get unique department ID from employee table.
+003) Write a query to get all employee details from the employee table order by first name, descending.
+004) Write a query to get the names (first_name, last_name), salary, PF of all the employees (PF is calculated as 12% of salary).
+005) Write a query to get the employee ID, names (first_name, last_name), salary in ascending order of salary.
+006) Write a query to get the total salaries payable to employees.
+007) Write a query to get the maximum and minimum salary from employees table.
+008) Write a query to get the average salary and number of employees in the employees table.
+009) Write a query to get the number of employees working with the company.
+010) Write a query to get the number of jobs available in the employees table.
+011) Write a query get all first name from employees table in upper case.
+012) Write a query to get the first 3 characters of first name from employees table.
+013) Write a query to calculate 171*214+625.
+014) Write a query to get the first 3 characters of first name from employees table.
+015) Write a query to get first name from employees table after removing white spaces from both side.
+016) Write a query to get the length of the employee names (first_name, last_name) from employees table.
+017) Write a query to select first 10 records from a table.
+018) Write a query to get monthly salary (round 2 decimal places) of each and every employee? (Assume the salary field provides the 'annual salary' information.)
+019) Write a query to display the names (first_name, last_name) and salary for all employees whose salary is not in the range $10,000 through $15,000.
+020) Write a query to display the names (first_name, last_name) and department ID of all employees in departments 30 or 100 in ascending alphabetical order by department ID.
+021) Write a query to display the names (first_name, last_name) and salary for all employees whose salary is not in the range $10,000 through $15,000 and are in department 30 or 100.
+022) Write a query to display the first_name of all employees who have both an "b" and "c" in their first name.
+023) Write a query to display the last name, job, and salary for all employees whose job is that of a Programmer or a Shipping Clerk, and whose salary is not equal to $4,500, $10,000, or $15,000.
+024) Write a query to display the last names of employees whose names have exactly 6 characters.
+025) Write a query to display the last names of emloyees having 'e' as the third character.
+026) Write a query to display the jobs/designations available in the employees table.
+027) Write a query to get the maximum salary of an employee working as a Programmer.
+028) Write a query to get the average salary and number of employees working the department 90.
+029) Write a query to get the highest, lowest, sum, and average salary of all employees.
+030) Write a query to get the number of employees with the same job.
+031) Write a query to get the difference between the highest and lowest salaries.
+032) Write a query to find the manager ID and the salary of the lowest-paid employee for that manager.
+033) Write a query to get the department ID and the total salary payable in each department.
+034) Write a query to get the average salary for each job ID excluding programmer.
+035) Write a query to get the total salary, maximum, minimum, average salary of employees (job ID wise), for department ID 90 only.

@@ -14,11 +14,6 @@ Aufgabe: Es soll die Funktion cp() mithilfe von POSIX funktionen nachgebaut werd
 #include <fcntl.h>
 #define BSize 20
 
-
-
-
-
-
 int copy (char *ifile, char *ofile)
 {
     char *buffer[BSize];

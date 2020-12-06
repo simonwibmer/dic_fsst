@@ -1,0 +1,1 @@
+select job_id, avg(salary) from employees where not job_id = "IT_PROG" group by job_id;
