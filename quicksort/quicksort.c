@@ -2,6 +2,7 @@
 Author: Simon Wibmer
 Klasse: 5BHEL
 Datum: 20.1.21
+Github: https://github.com/simonwibmer/dic_fsst/tree/master/quicksort
 
 Aufgabenstellung: Implementieren Sie Quicksort (https://de.wikipedia.org/wiki/Quicksort, auch Pseudocode ;)) für arrays mit integern.
 Testen und Messen sie die Zeiten mit 10, 100, 1000, 10000, 100000 Elementen.
