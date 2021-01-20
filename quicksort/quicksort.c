@@ -1,7 +1,17 @@
 /*
 Author: Simon Wibmer
 Klasse: 5BHEL
-Datum 20.1.21
+Datum: 20.1.21
+
+Aufgabenstellung: Implementieren Sie Quicksort (https://de.wikipedia.org/wiki/Quicksort, auch Pseudocode ;)) für arrays mit integern.
+Testen und Messen sie die Zeiten mit 10, 100, 1000, 10000, 100000 Elementen.
+
+Messungen:
+10: 1µs
+100: 11µs
+1000: 108µs
+10000: 2410µs
+100000: 225876µs
 */
 #include <assert.h>
 #include <stdio.h>
@@ -68,7 +78,7 @@ int *create_array(int size, int max_int)
 	return b;
 }
 
-#define MY_SIZE 100
+#define MY_SIZE 100000
 
 int main(int argc, char **argv)
 {
