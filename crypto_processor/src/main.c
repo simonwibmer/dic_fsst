@@ -1,18 +1,17 @@
 /*
 Title: crypto_processor/main.c
 Author: Simon Wibmer
-Wichtig:
-https://docs.zephyrproject.org/latest/reference/peripherals/uart.html
+Klasse: 5BHEL
+Github: https://github.com/simonwibmer/dic_fsst/tree/master/crypto_processor
 
-https://docs.zephyrproject.org/2.4.0/reference/crypto/index.html
-
-
+!Please read the Dokumentation!
 
 //\\//\\//\\ Important //\\//\\//\\
 Die Funktionen validate_hw_compatibility() und cbc_mode() stammen aus dem crypto example: zephyrproject/zephyr/samples/drivers/crypto/src/main.c und wurden nur etwas angepasst.
 Außerdem muss ich hier den Mitschülern Fabio Plunser und Lorenz Mitterhuber für ihre Hilfe bei manchen Fehlern/Problemen und der seelischen sowie mentalen Unterstützung danken.
 //\\//\\//\\//\\//\\//\\//\\//\\//\\
 */
+
 //Includes
 //###################################################################
 #include <stdlib.h>
@@ -116,7 +115,6 @@ void *uart_out (void *vali)
 				uart_poll_out(my_uart_dev, data[i]);
 
 			}
-			
 		}
 		else
 		{
