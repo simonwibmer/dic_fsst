@@ -9,7 +9,7 @@ common:
     harness_config:
       type: one_line
       regex:
-        - "Hello World! (.*)"
+        - "Crypto <3 (.*)"
 tests:
   sample.basic.helloworld:
     tags: introduction
