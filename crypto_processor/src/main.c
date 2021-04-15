@@ -10,6 +10,8 @@ Die Funktionen validate_hw_compatibility() und cbc_mode() stammen aus dem crypto
 Außerdem muss ich hier den Mitschülern Fabio Plunser und Lorenz Mitterhuber für ihre Hilfe bei manchen Fehlern/Problemen und der seelischen sowie mentalen Unterstützung danken.
 //\\//\\//\\//\\//\\//\\//\\//\\//\\
 */
+
+
 //Includes
 //###################################################################
 #include <stdlib.h>
