@@ -1,33 +1,16 @@
 .. _hello_world:
 
-Hello World
+Crypto Processor 
 ###########
 
 Overview
 ********
 
-A simple sample that can be used with any :ref:`supported board <boards>` and
-prints "Hello World" to the console.
+A programm to let a virtual processor for crypto-operations run on a linux machine 
 
 Building and Running
 ********************
 
-This application can be built and executed on QEMU as follows:
+This application can be build with west for the native_posix_64 board
 
-.. zephyr-app-commands::
-   :zephyr-app: samples/hello_world
-   :host-os: unix
-   :board: qemu_x86
-   :goals: run
-   :compact:
-
-To build for another board, change "qemu_x86" above to that board's name.
-
-Sample Output
-=============
-
-.. code-block:: console
-
-    Hello World! x86
-
-Exit QEMU by pressing :kbd:`CTRL+A` :kbd:`x`.
+It can be run through a linux terminal 
