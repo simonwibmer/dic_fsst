@@ -1,6 +1,5 @@
 sample:
-  description: Hello World sample, the simplest Zephyr
-    application
+  description: Hello
   name: hello world
 common:
     tags: introduction
